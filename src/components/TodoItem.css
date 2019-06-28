@@ -1,0 +1,48 @@
+.todo-item-template {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+}
+
+.todo-item-template:hover {
+    background-color: #e3fafc;
+}
+
+.todo-item-template:not(:last-child) {
+    border-bottom: 1px solid #22b8cf;
+}
+
+.todo-item__text {
+    width: 100%;
+    font-weight: 600;
+}
+
+.todo-item__text:hover {
+    color: #22b8cf;
+}
+
+.todo-item__text.checked {
+    text-decoration: line-through;
+    color: #adb5db;
+    font-weight: 400;
+}
+
+
+.todo-item__checkmark {
+    color: #3bc9db;
+    /* font-weight: 600; */
+    margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.todo-item__checkmark.checked {
+    opacity: 0;
+}
+
+.todo-item__remove {
+    color: #e64980;
+}
